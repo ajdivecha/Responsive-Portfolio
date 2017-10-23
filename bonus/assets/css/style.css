@@ -8,9 +8,51 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
-/* general */
+/* sticky footer styling */
+
+/* http://ryanfait.com/html5-sticky-footer/ */
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* end sticky footer styling */
+
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* end hover styling */
+
+/* general styling */
 
 .container {
   width: 100%;
@@ -114,7 +156,7 @@ footer {
 .sidebar {
   float: right;
   width: 100%;
-  max-width: 260px;
+  max-width: 270px;
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -156,48 +198,6 @@ h3,
   border: 1px solid #ddd;
 }
 
-/* portfolio page */
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
-
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
-
 /* contact page */
 
 #contact-form ul {
@@ -237,130 +237,3 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-
-/*HW 2 - Assingment 1 - using your skelton*/
-
-/*inserting media queries*/
-
-/*980px*/
-@media screen and (max-width: 980px) {
-     #masthead {
-    padding-right: 130px;
-    padding-left: 130px;
-  }
- 
-
-    .main-section {
-      width: 370px;
-      margin-left: 120px;
-    }
-
-
-    .auth-image {
-      margin-bottom: 20px;
-      width: 235px;
-    }
-
-    .sidebar {
-      margin-right: 120px;
-    }
-  }
-
-/*760px*/
-@media screen and (max-width: 768px) {
-    #masthead {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .container {
-      max-width:100%;
-    }
-
-    .main-section {
-      max-width: unset;
-      margin-left: 20px;
-      width: 93%;
-
-    }
-
-    .auth-image {
-      width: 340px;
-    }
-
-    .sidebar {
-    max-width: 93%;
-    float: left;
-    margin-left: 20px;
-    }
-
-}
-
-/*640px*/
-@media screen and (max-width: 640px) {
-  #masthead {
-    position: static;
-    text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-  #logo {
-    width: 100%;
-  }
-
-
-  .auth-image {
-    width: 520px;
-  }
-
-  #main-container {
-    padding: 10px;
-  }
-
-  nav {
-    float: none;
-    margin: 0px;
-  }
-
-  .work {
-    width: 100%;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
